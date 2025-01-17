@@ -1,0 +1,97 @@
+
+
+.portada{
+    background-image: url('../source/portada.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%; /* Asegura que el fondo ocupe todo el ancho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    flex-direction: column; /* Coloca los elementos en una columna */
+}
+
+/* Fondo para la sección completa */
+.intro {
+    flex: 1; /* Hace que el contenedor de contenido tome el espacio restante */ 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+  
+/* Cuadro de contenido */
+.content-box {
+    background-color: rgba(242, 242, 242, 0.8); /* Fondo con opacidad para que se vea el fondo */
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeIn 1s forwards;
+}
+
+/* Título */
+.content-box h1 {
+    font-size: 2rem;
+    color: #594138;
+    margin-bottom: 20px;
+}
+
+/* Botones */
+.buttons {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección a columna para móviles */
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #F28241;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 80%; /* Asegura que los botones ocupen un buen tamaño en móviles */
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #04ADBF;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries para móviles */
+@media (max-width: 768px) {
+    .content-box {
+        width: 90%;
+        padding: 20px;
+        margin: 0 10px;
+    }
+
+    .content-box h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}

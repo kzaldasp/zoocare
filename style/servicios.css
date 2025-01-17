@@ -1,0 +1,76 @@
+/* Sección de servicios */
+.servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #FFF5E6;
+}
+
+/* Estilo de las tarjetas */
+.s_tarjeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #94B7A9 ;
+    padding: 40px 50px; /* Más grueso y más grande */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra más pronunciada */
+    border-radius: 5px; /* Bordes más redondeados */
+    width: 100%;
+    max-width: 1200px; /* Aumenta el ancho máximo */
+    box-sizing: border-box; /* Asegura que padding y border no aumenten el ancho total */
+    opacity: 0; 
+    transform: translateY(50px); /* Desplaza hacia abajo */ 
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.s_tarjeta.visible { opacity: 1; transform: translateY(0); }
+
+
+/* Título de las tarjetas */
+.s_titulo {
+    font-size: 1.5rem; /* Título más grande */
+    font-weight: bold;
+    color: #272727 ;
+    padding-right: 38px;
+}
+
+/* Detalles de las tarjetas */
+.s_detalles {
+    font-size: 1.1rem; /* Texto más grande */
+    color: #272727 ;
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+}
+
+/* Media Queries para móviles */
+@media (max-width: 768px) {
+    .s_tarjeta {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px; /* Ajusta el padding para dispositivos móviles */
+    }
+
+    .s_titulo {
+        font-size: 1rem;;
+        margin-bottom: 10px; /* Espacio entre título y detalles en móviles */
+    }
+}
+
+@keyframes aparecerDesdeAbajo {
+
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+}

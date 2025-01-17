@@ -1,0 +1,47 @@
+       /* Sección de testimonios */
+       .testimonios {
+        display: flex;
+        flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas */
+        gap: 20px; /* Espacio entre las tarjetas */
+        justify-content: center; /* Centrar las tarjetas horizontalmente */
+        padding: 20px;
+        box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+    }
+
+    /* Cada tarjeta de testimonio */
+    .testimonio-cad {
+        background-color: #fff; /* Fondo blanco para las tarjetas */
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
+        padding: 20px;
+        width: 100%;
+        max-width: 300px; /* Ancho máximo para las tarjetas */
+        box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+    }
+
+    /* Imagen dentro de la tarjeta */
+    .testimonio-cad img {
+        width: 100px; /* Ancho de la imagen */
+        height: 100px; /* Alto de la imagen */
+        border-radius: 50%; /* Hace que la imagen sea circular */
+        object-fit: cover; /* Asegura que la imagen se ajuste correctamente dentro del círculo */
+        margin: 0 auto 10px; /* Centra la imagen y agrega un margen inferior */
+        display: block; /* Centra la imagen */
+    }
+
+    /* Párrafo de testimonio */
+    .testimonio-p {
+        font-size: 0.9rem; /* Tamaño de fuente */
+        color: #333; /* Color del texto */
+        margin-bottom: 10px;
+        text-align: center; /* Centrar el texto */
+    }
+
+    /* Nombre del testimonio */
+    .testimonio-n {
+        font-weight: bold; /* Texto en negrita */
+        font-size: 1rem; /* Tamaño de fuente */
+        color: #555; /* Color del texto */
+        text-align: center; /* Centrar el texto */
+    }

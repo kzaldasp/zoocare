@@ -1,0 +1,65 @@
+/* Section Gallery */
+.adoption-gallery {
+  padding: 20px;
+}
+
+.gallery-container {
+  margin-right:20px ;
+  margin-left:20px ;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card Style */
+.adoption-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 220px;
+}
+
+.adoption-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-info {
+  padding: 15px;
+}
+
+.card-info h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-info p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Hover Effects */
+.adoption-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .adoption-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .adoption-card {
+    width: 90%;
+  }
+}
